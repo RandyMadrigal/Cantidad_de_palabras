@@ -10,11 +10,9 @@ namespace Cantidad_de_palabras
     {
         private int total = 0;
         private string palabra;
+        private string Cadena = "0123456789";
 
-        public Operadores()
-        {
-
-        }
+        public Operadores(){   }
 
         public int TOTAL
         {
@@ -26,6 +24,12 @@ namespace Cantidad_de_palabras
         {
             get { return palabra; }
             set { palabra = value; }
+        }
+
+        public string CADENA
+        {
+            get { return Cadena; }
+            set { Cadena = value; }
         }
 
 

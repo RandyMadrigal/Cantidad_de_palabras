@@ -16,6 +16,7 @@ namespace Cantidad_de_palabras
         char espacio = ' ';
         Operadores op1 = new Operadores();
         Operadores op2 = new Operadores();
+        Operadores op3 = new Operadores();
 
         //Hacer de varias formas...
         private void GetGuion()
@@ -59,18 +60,42 @@ namespace Cantidad_de_palabras
                 cantidadTotal.Text = i.ToString();
             }
         }
+        /// <summary>
+        /// /
+        /// </summary>
+        private void TotalNumero()
+        {
+            op3.PALABRA = txtFrase.Text;
+     
+            for(int i = 0; i < op3.PALABRA.Length; i++)
+            {
+                for(int j=0; j < op3.CADENA.Length; j++)
+                {
+                    if (op3.PALABRA[i].Equals(op3.CADENA[j] ) )
+                    {
+                        op3.TOTAL++;
+                    }
+                }
+
+            }
+            CantidadNumeros.Text = op3.TOTAL.ToString();
+
+            op3.TOTAL = 0; 
+        }
 
         private void txtFrase_TextChanged(object sender, EventArgs e)
         {
             GetEspacio();
             GetGuion();
             TotalCaracteres();
+            TotalNumero();
         }
 
         private void Formulario_Load(object sender, EventArgs e)
         {
             this.Icon = new Icon(@"Icon/cubitos.ico");
             btnLimpiar.Image = Image.FromFile(@"Icon/envase.png");
+            pictureBox.Image = Image.FromFile(@"Icon/programador.png");
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

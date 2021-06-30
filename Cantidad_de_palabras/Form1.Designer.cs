@@ -38,12 +38,16 @@ namespace Cantidad_de_palabras
             this.cantidadTotal = new System.Windows.Forms.Label();
             this.labelcantidad3 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.CantidadNumeros = new System.Windows.Forms.Label();
+            this.labelNumeros = new System.Windows.Forms.Label();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // labelFrase
             // 
             this.labelFrase.AutoSize = true;
-            this.labelFrase.Location = new System.Drawing.Point(12, 65);
+            this.labelFrase.Location = new System.Drawing.Point(12, 49);
             this.labelFrase.Name = "labelFrase";
             this.labelFrase.Size = new System.Drawing.Size(61, 21);
             this.labelFrase.TabIndex = 0;
@@ -60,7 +64,7 @@ namespace Cantidad_de_palabras
             // 
             // txtFrase
             // 
-            this.txtFrase.Location = new System.Drawing.Point(12, 98);
+            this.txtFrase.Location = new System.Drawing.Point(12, 87);
             this.txtFrase.Multiline = true;
             this.txtFrase.Name = "txtFrase";
             this.txtFrase.Size = new System.Drawing.Size(437, 58);
@@ -97,7 +101,7 @@ namespace Cantidad_de_palabras
             // cantidadTotal
             // 
             this.cantidadTotal.AutoSize = true;
-            this.cantidadTotal.Location = new System.Drawing.Point(534, 188);
+            this.cantidadTotal.Location = new System.Drawing.Point(690, 124);
             this.cantidadTotal.Name = "cantidadTotal";
             this.cantidadTotal.Size = new System.Drawing.Size(21, 21);
             this.cantidadTotal.TabIndex = 7;
@@ -106,7 +110,7 @@ namespace Cantidad_de_palabras
             // labelcantidad3
             // 
             this.labelcantidad3.AutoSize = true;
-            this.labelcantidad3.Location = new System.Drawing.Point(523, 157);
+            this.labelcantidad3.Location = new System.Drawing.Point(675, 98);
             this.labelcantidad3.Name = "labelcantidad3";
             this.labelcantidad3.Size = new System.Drawing.Size(59, 21);
             this.labelcantidad3.TabIndex = 6;
@@ -116,19 +120,49 @@ namespace Cantidad_de_palabras
             // 
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Location = new System.Drawing.Point(675, 170);
+            this.btnLimpiar.Location = new System.Drawing.Point(790, 113);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(59, 56);
             this.btnLimpiar.TabIndex = 8;
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
+            // CantidadNumeros
+            // 
+            this.CantidadNumeros.AutoSize = true;
+            this.CantidadNumeros.Location = new System.Drawing.Point(692, 65);
+            this.CantidadNumeros.Name = "CantidadNumeros";
+            this.CantidadNumeros.Size = new System.Drawing.Size(21, 21);
+            this.CantidadNumeros.TabIndex = 10;
+            this.CantidadNumeros.Text = "0";
+            // 
+            // labelNumeros
+            // 
+            this.labelNumeros.AutoSize = true;
+            this.labelNumeros.Location = new System.Drawing.Point(663, 39);
+            this.labelNumeros.Name = "labelNumeros";
+            this.labelNumeros.Size = new System.Drawing.Size(122, 21);
+            this.labelNumeros.TabIndex = 9;
+            this.labelNumeros.Text = "Cantidad \"#\"";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox.Location = new System.Drawing.Point(165, 12);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(77, 55);
+            this.pictureBox.TabIndex = 11;
+            this.pictureBox.TabStop = false;
+            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(746, 240);
+            this.ClientSize = new System.Drawing.Size(861, 181);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.CantidadNumeros);
+            this.Controls.Add(this.labelNumeros);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cantidadTotal);
             this.Controls.Add(this.labelcantidad3);
@@ -145,6 +179,7 @@ namespace Cantidad_de_palabras
             this.Name = "Formulario";
             this.Text = "Formulario";
             this.Load += new System.EventHandler(this.Formulario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +196,9 @@ namespace Cantidad_de_palabras
         private System.Windows.Forms.Label cantidadTotal;
         private System.Windows.Forms.Label labelcantidad3;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label CantidadNumeros;
+        private System.Windows.Forms.Label labelNumeros;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
 
