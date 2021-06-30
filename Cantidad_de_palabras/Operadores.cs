@@ -9,6 +9,7 @@ namespace Cantidad_de_palabras
     class Operadores
     {
         private int total = 0;
+        private string palabra;
 
         public Operadores()
         {
@@ -21,6 +22,11 @@ namespace Cantidad_de_palabras
             set { total = value; }
         }
 
+        public String PALABRA
+        {
+            get { return palabra; }
+            set { palabra = value; }
+        }
 
 
     }

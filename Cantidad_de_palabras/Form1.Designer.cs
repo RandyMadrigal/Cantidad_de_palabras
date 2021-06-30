@@ -37,6 +37,7 @@ namespace Cantidad_de_palabras
             this.labelcantidad2 = new System.Windows.Forms.Label();
             this.cantidadTotal = new System.Windows.Forms.Label();
             this.labelcantidad3 = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelFrase
@@ -62,7 +63,7 @@ namespace Cantidad_de_palabras
             this.txtFrase.Location = new System.Drawing.Point(12, 98);
             this.txtFrase.Multiline = true;
             this.txtFrase.Name = "txtFrase";
-            this.txtFrase.Size = new System.Drawing.Size(383, 58);
+            this.txtFrase.Size = new System.Drawing.Size(437, 58);
             this.txtFrase.TabIndex = 2;
             this.txtFrase.TextChanged += new System.EventHandler(this.txtFrase_TextChanged);
             // 
@@ -111,12 +112,24 @@ namespace Cantidad_de_palabras
             this.labelcantidad3.TabIndex = 6;
             this.labelcantidad3.Text = "Total ";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(675, 170);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(59, 56);
+            this.btnLimpiar.TabIndex = 8;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // Formulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(746, 240);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.cantidadTotal);
             this.Controls.Add(this.labelcantidad3);
             this.Controls.Add(this.cantidadEspacio);
@@ -126,9 +139,12 @@ namespace Cantidad_de_palabras
             this.Controls.Add(this.labelCantidad);
             this.Controls.Add(this.labelFrase);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
             this.Name = "Formulario";
-            this.Text = "Form1";
+            this.Text = "Formulario";
+            this.Load += new System.EventHandler(this.Formulario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +160,7 @@ namespace Cantidad_de_palabras
         private System.Windows.Forms.Label labelcantidad2;
         private System.Windows.Forms.Label cantidadTotal;
         private System.Windows.Forms.Label labelcantidad3;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
