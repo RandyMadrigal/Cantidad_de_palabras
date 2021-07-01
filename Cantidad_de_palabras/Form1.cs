@@ -60,9 +60,7 @@ namespace Cantidad_de_palabras
                 cantidadTotal.Text = i.ToString();
             }
         }
-        /// <summary>
-        /// /
-        /// </summary>
+  
         private void TotalNumero()
         {
             op3.PALABRA = txtFrase.Text;
@@ -100,12 +98,12 @@ namespace Cantidad_de_palabras
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Limpiando la Pizarra :D");
             txtFrase.Text = "";
             cantidadGuion.Text = "0";
             cantidadEspacio.Text = "0";
             cantidadTotal.Text = "0";
-
-
+            CantidadNumeros.Text = "0";
         }
     }
 }
