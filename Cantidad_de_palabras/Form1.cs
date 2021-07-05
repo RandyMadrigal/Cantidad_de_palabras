@@ -92,8 +92,8 @@ namespace Cantidad_de_palabras
         private void Formulario_Load(object sender, EventArgs e)
         {
             this.Icon = new Icon(@"Icon/cubitos.ico");
-            btnLimpiar.Image = Image.FromFile(@"Icon/envase.png");
-            pictureBox.Image = Image.FromFile(@"Icon/programador.png");
+            btnLimpiar.Image = Image.FromFile(@"Icon/Dance.gif");
+            pictureBox.Image = Image.FromFile(@"Icon/Dance.gif");
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)

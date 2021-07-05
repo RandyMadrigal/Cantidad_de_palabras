@@ -10,6 +10,9 @@
     <None Update="Icon\cubitos.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Icon\Dance.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Icon\envase.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
